@@ -1,9 +1,9 @@
-def Rmin(A,l):
+def Rmin(a,l):
     if(l == 1):
-        return A[0]
-    return min(A[l-1], Rmin(A, l-1))
+        return a[0]
+    return min(a[l-1], Rmin(a, l-1))
     
 
-A = [1,4,45,-50,6,10,2]
-l = len(A)
-print(Rmin(A,l))
+a = [1,4,45,-50,6,10,2]
+l = len(a)
+print(Rmin(a,l))
